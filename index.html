@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Website Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showCategory('education')">Education</a></li>
+                <li><a href="#" onclick="showCategory('games')">Games</a></li>
+                <li><a href="#" onclick="showCategory('history')">History</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="searchBar" placeholder="Search links..." oninput="searchLinks()">
+    </header>
+    <main id="content">
+        <section id="recommended">
+            <h2>Recommended Links</h2>
+            <div class="link-card" data-category="education">
+                <h3>Educational Resource 1</h3>
+                <p>A great resource for learning.</p>
+                <span class="rating">Rating: <span class="stars">⭐⭐⭐⭐</span></span>
+            </div>
+            <div class="link-card" data-category="games">
+                <h3>Game Site 1</h3>
+                <p>An exciting game site.</p>
+                <span class="rating">Rating: <span class="stars">⭐⭐⭐</span></span>
+            </div>
+            <div class="link-card" data-category="history">
+                <h3>Historical Article 1</h3>
+                <p>A fascinating historical article.</p>
+                <span class="rating">Rating: <span class="stars">⭐⭐⭐⭐⭐</span></span>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
