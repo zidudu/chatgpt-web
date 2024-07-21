@@ -27,6 +27,18 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: #ddd; /* 색상이 바뀌는 효과 추가 */
+}
+
+#pageTitle {
+    cursor: pointer; /* 커서 모양을 포인터로 변경 */
+}
+
+#pageTitle.clicked {
+    color: #ddd; /* 클릭 시 색상 변경 */
+}
+
 #searchBar {
     margin-top: 1em;
     padding: 0.5em;
