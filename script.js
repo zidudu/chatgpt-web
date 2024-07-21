@@ -28,4 +28,7 @@ showCategory('all');
 // Add event listener to the page title to show all links when clicked
 document.getElementById('pageTitle').addEventListener('click', () => {
     showCategory('all');
+    // Change the color of the page title
+    const pageTitle = document.getElementById('pageTitle');
+    pageTitle.classList.add('clicked');
 });
