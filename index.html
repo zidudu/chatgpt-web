@@ -14,6 +14,7 @@
                 <li><a href="#" onclick="showCategory('education')">Education</a></li>
                 <li><a href="#" onclick="showCategory('games')">Games</a></li>
                 <li><a href="#" onclick="showCategory('history')">History</a></li>
+                <li><a href="#" onclick="showList()">List</a></li>
             </ul>
         </nav>
         <input type="text" id="searchBar" placeholder="Search links..." oninput="searchLinks()">
@@ -36,6 +37,12 @@
                 <p>A fascinating historical article.</p>
                 <span class="rating">Rating: <span class="stars">⭐⭐⭐⭐⭐</span></span>
             </div>
+        </section>
+        <section id="listView" style="display: none;">
+            <h2>List View</h2>
+            <ul id="linkList">
+                <!-- 링크 항목들이 여기에 추가됩니다 -->
+            </ul>
         </section>
     </main>
     <script src="script.js"></script>
